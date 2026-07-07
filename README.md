@@ -65,10 +65,12 @@ Mở http://localhost:3000
 ### Cách A: Vercel Dashboard
 
 1. Import repo GitHub vào Vercel
-2. Thêm Environment Variables:
-   - `DATABASE_URL` (pooled)
-   - `DIRECT_URL` (direct)
+2. Thêm Environment Variables (Vercel + Neon integration thường tự inject):
+   - `DATABASE_URL` hoặc `POSTGRES_URL` (pooled, hostname có `-pooler`)
+   - `POSTGRES_URL_NON_POOLING` hoặc `DATABASE_URL_UNPOOLED` (direct, không có `-pooler`)
    - `SEED_ON_DEPLOY=true` (chỉ lần deploy đầu)
+
+   **Lưu ý:** Nếu chỉ có `DATABASE_URL` pooled, build script sẽ tự suy ra direct URL (bỏ `-pooler` trong hostname). Tuy nhiên nên set thêm `POSTGRES_URL_NON_POOLING` để chắc chắn migrate thành công.
 3. Deploy — build chạy `prisma migrate deploy` tự động
 4. Sau khi seed xong, đổi `SEED_ON_DEPLOY=false` và redeploy
 

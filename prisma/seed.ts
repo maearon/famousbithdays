@@ -2,15 +2,10 @@ import "dotenv/config";
 import bcrypt from "bcryptjs";
 import { PrismaClient } from "../generated/prisma/client";
 import { PrismaNeon } from "@prisma/adapter-neon";
+import { getDirectDatabaseUrl } from "../lib/database-url";
 import { DEFAULT_ADMIN, PEOPLE_SEED } from "../lib/seed-data";
 
-const connectionString = process.env.DIRECT_URL ?? process.env.DATABASE_URL;
-
-if (!connectionString) {
-  throw new Error("DATABASE_URL or DIRECT_URL is required for seeding");
-}
-
-const adapter = new PrismaNeon({ connectionString });
+const adapter = new PrismaNeon({ connectionString: getDirectDatabaseUrl() });
 const prisma = new PrismaClient({ adapter });
 
 async function main() {
