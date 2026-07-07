@@ -62,6 +62,22 @@ Mở http://localhost:3000
 
 ## 4. Deploy Vercel + Neon
 
+### Kiểm tra lỗi 404 NOT_FOUND
+
+Theo [Vercel NOT_FOUND docs](https://vercel.com/docs/errors/not_found), lỗi này **không phải** 404 của Next.js — nghĩa là **không có deployment hợp lệ** để phục vụ URL.
+
+Checklist:
+
+1. Vercel Dashboard → **Deployments** → deployment mới nhất phải **Ready** (không phải Error)
+2. Nếu **Error** → mở **Build Logs**, thường do thiếu env DB
+3. **Settings → Environment Variables** → bật cho **Production**:
+   - `DATABASE_URL` hoặc `POSTGRES_URL`
+   - `POSTGRES_URL_NON_POOLING` (khuyến nghị)
+   - `SEED_ON_DEPLOY=true` (lần đầu)
+4. **Settings → General → Root Directory** phải để trống (project Next.js ở root repo)
+5. **Settings → General → Framework Preset** = **Next.js**
+6. Sau khi sửa env → **Redeploy** (Deployments → ... → Redeploy)
+
 ### Cách A: Vercel Dashboard
 
 1. Import repo GitHub vào Vercel

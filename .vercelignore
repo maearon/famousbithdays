@@ -1,0 +1,11 @@
+# Legacy PHP app (not used by Next.js on Vercel)
+index.php
+index*.php
+xuly.php
+most-popular-people.php
+login.html
+vietnam.html
+htdocs.rar
+Report.doc
+sinhnhatnoitieng*.sql
+them, sua, xoa/
