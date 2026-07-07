@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Đăng Nhập | Sinh Nhật Nổi Tiếng </title>
+<link rel="stylesheet" type="text/css" media="all" href="/dangnhapwp.css">
+</head>
+
+<body class="login login-action-login wp-core-ui locale-vi">
+<div id="login">
+<h1><a href="/index.php" title="Sinh Nhật Nổi Tiếng" tabindex="-1"></a></h1>
+<form name="loginform" id="loginform" action="/xuly.php" method="post">
+<p>
+<label for="user_login">Tên người dùng hoặc Địa chỉ Email<br />
+<input type="text" name="us" id="user_login" class="input" value="" size="20" /></label> 
+<!--name="us" dung de truyen ten dang nhap-->
+</p>
+<p>
+<label for="user_pass">Mật khẩu<br />
+<input type="password" name="pa" id="user_pass" class="input" value="" size="20" /></label> 
+<!--name="pa" dung de truyen mat khau-->
+</p>
+<p class="forgetmenot">
+<label for="rememberme">
+<input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Tự động đăng nhập
+</label>
+</p>
+<p class="submit">
+<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Đăng nhập"/>
+</p>
+</form>
+<p id="nav"><a href="">Bạn quên mật khẩu?</a></p>
+<p id="backtoblog"><a href="/index.php">&larr;<!--mui ten--> Quay lại trang chủ</a></p> 
+</div>
+<div class="clear"></div>
+</body>
+</html>
