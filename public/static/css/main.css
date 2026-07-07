@@ -1,0 +1,2745 @@
+@font-face {
+    font-family: 'robotolight';
+    src: url(/static/fonts/roboto-light-webfont.woff2) format('woff2'), url(/static/fonts/roboto-light-webfont.woff) format('woff')
+}
+@font-face {
+    font-family: 'robotomedium';
+    src: url(/static/fonts/roboto-medium-webfont.woff2) format('woff2'), url(/static/fonts/roboto-medium-webfont.woff) format('woff')
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url(/static/fonts/roboto-regular-webfont.woff2) format('woff2'), url(/static/fonts/roboto-regular-webfont.woff) format('woff')
+}
+body {
+    background-color: #F9F9F9;
+    background-size: 1360px;
+    background-position: -189px -90px;
+    color: #333;
+    font-family: 'Robotoregular', sans-serif;
+    font-size: 16px;
+    line-height: 24px
+}
+.nav {
+    background: rgba(238, 238, 238, .95);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    height: 55px
+}
+.nav .brand {
+    background-image: url(/static/img/famous-birthdays-logo-rgb.svg);/*file anh o phan dau trang*/
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 60px;
+    text-indent: -999999px;
+    margin-left: -6px
+}
+.search {
+    margin: 9px 15px 13px 0;
+    position: relative;
+    height: 38px
+}
+.search .btn-search {
+    background-color: #E4138E;
+    border-radius: 0 4px 4px 0;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 38px
+}
+.nav .quick-links {
+    display: none;
+    float: right;
+    font-size: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+.nav .quick-links li {
+    display: inline-block
+}
+.nav .quick-links li a {
+    display: inline-block;
+    padding: 6px 8px;
+    color: #888
+}
+.nav .quick-links li a:hover {
+    background-color: #E4138E;
+    color: #fff;
+    text-decoration: none
+}
+.nav .quick-links li a .icn {
+    color: #777;
+    display: block;
+    font-size: 20px;
+    text-align: center
+}
+.nav .quick-links li a:hover .icn {
+    color: rgba(255, 255, 255, .7)
+}
+.static-search {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto
+}
+.pending-info-request {
+    font-family: sans-serif;
+    font-weight: 700
+}
+.page-wrapper {
+    padding-top: 55px
+}
+.adspot1 {
+    padding: 20px 0;
+    margin-left: -25px;
+    min-height: 70px
+}
+.adspot7 {
+    margin-left: -15px
+}
+.people-list .adspot {
+    padding-top: 15px;
+    padding-bottom: 17px
+}
+.img1 {
+    text-align: center;
+    margin-left: -15px
+}
+.img1 img {
+    display: inline-block;
+    max-width: 300px
+}
+.img-src {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    bottom: 3px;
+    left: 5px;
+    background: rgba(255, 255, 255, .6);
+    border-radius: 50px;
+    padding-top: 1px;
+    cursor: pointer
+}
+.img-src:hover {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+    background: rgba(255, 255, 255, 1)
+}
+.img-src-overlay {
+    width: 136px;
+    height: 26px;
+    padding: 1px;
+    background: rgba(255, 255, 255, .7);
+    border: 1px solid rgba(225, 225, 225, .8);
+    border-radius: 8px 8px 8px 0;
+    -webkit-border-radius: 8px 8px 8px 0;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: none;
+    z-index: 100;
+    font-size: 12px
+}
+.img-src:hover+.img-src-overlay {
+    display: block
+}
+.img-src-overlay:hover {
+    display: block
+}
+h1 {
+    font-family: 'robotolight', sans-serif;
+    font-size: 35px
+}
+h2 {
+    font-family: 'robotolight';
+    font-size: 18px;
+    color: #666;
+    letter-spacing: 0;
+    margin-bottom: 4px
+}
+h3 {
+    font-family: 'Robotoregular';
+    font-size: 20px;
+    border-bottom: solid 3px #E4138E;
+    padding: 0 0 6px 6px;
+    margin: 25px 0 7px
+}
+h3 a,
+h3 a:hover,
+h3 a:active {
+    color: #000
+}
+h5 {}h6 {
+    font-family: 'Robotoregular';
+    font-size: 10px;
+    color: #666;
+    margin-bottom: 0;
+    text-transform: uppercase
+}
+.container {
+    width: 300px
+}
+a {
+    color: #E4138E
+}
+a:hover,
+a:focus {
+    color: #c10c77;
+    text-decoration: none
+}
+p a:hover {
+    text-decoration: none
+}
+.btn-primary {
+    background: #E4138E;
+    border: 1px solid #E4138E
+}
+.btn-primary.disabled.active,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
+    background: #c10c77;
+    border: 1px solid #c10c77
+}
+.btn-rank {
+    display: block;
+    padding: 15px 8px;
+    white-space: normal;
+    width: 100%;
+    min-height: 90px
+}
+.btn-rank .title {
+    font-family: 'Robotoregular';
+    font-size: 12px;
+    color: #666;
+    display: block;
+    line-height: 1em;
+    text-transform: uppercase
+}
+.btn-rank .rank {
+    display: inline-block;
+    font-family: 'Robotolight';
+    font-size: 25px;
+    color: #E4138E;
+    line-height: 1.2em;
+    margin-top: 3px
+}
+.main-section {
+    background: #fff;
+    border-bottom: 1px solid #eaeaea;
+    margin: 0 0 15px
+}
+.main-info h1 {
+    text-align: center;
+    font-size: 35px
+}
+.adspot {
+    padding: 15px 0 5px 0;
+    text-align: center
+}
+.adspot img {
+    max-width: 100%;
+    height: auto
+}
+.person-title {
+    text-transform: uppercase;
+    color: #E4138E;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Robotoregular', sans-serif
+}
+.btn-boost-wrap {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 6px;
+    padding: 0 0 0 50px;
+    position: relative;
+    width: 100%;
+    background-color: #fff
+}
+.btn-boost-wrap .rank-info {
+    font-family: 'Robotoregular';
+    display: inline-block;
+    background: #666;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    text-align: center;
+    padding: 7px 8px;
+    line-height: 1em;
+    z-index: 100;
+    border-radius: 5px 0 0 5px
+}
+.btn-boost-wrap .rank-title {
+    font-size: 10px;
+    color: rgba(255, 255, 255, .8);
+    line-height: 1em;
+    text-transform: lowercase;
+    padding-top: 1px;
+    min-width: 40px
+}
+.btn-boost-wrap .rank-no {
+    font-size: 16px;
+    color: #FFF
+}
+.btn-boost {
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+    color: #E4138E;
+    display: inline-block;
+    line-height: 2em;
+    position: relative;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 5px
+}
+.btn-boost:hover {
+    background-color: #E4138E;
+    border-color: #999;
+    border: none
+}
+.btn-primary.btn-boost.boosted,
+.btn-primary.btn-boost.boosted.disabled {
+    background: #E4138E;
+    border: none;
+    color: #fff;
+    opacity: 1
+}
+.btn-primary.btn-boost.boosted .icn {
+    color: #fff
+}
+.stats .col-xs-6 {
+    background: #f1f1f1
+}
+.stats .col-xs-6 a,
+.stats .mobile-stats a {
+    color: #333
+}
+.stats .col-xs-6 a:hover,
+.stats .mobile-stats a:hover {
+    color: #c10c77
+}
+.stat i.icn {
+    color: #E4138E;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    background: #f1f1f1;
+    bottom: 0;
+    padding: 15px 6px
+}
+.stats {
+    padding: 3px 0 7px 0
+}
+.stats .main-stats {
+    display: none;
+    background: #f1f1f1
+}
+.stats .mobile-stats {
+    display: block;
+    text-align: center
+}
+.group-stat-col a {
+    color: #333
+}
+.group-stats .main-stats {
+    display: none;
+    background: #f1f1f1
+}
+.group-stats .mobile-stats {
+    display: block;
+    text-align: center
+}
+.group-boost-main {
+    display: none
+}
+.group-boost-tablet {
+    display: none
+}
+.group-boost-mobile {
+    display: block;
+    padding-bottom: 10px
+}
+.group-about h2 {
+    margin-top: 10px
+}
+.stat {
+    padding: 4px 0 8px 34px;
+    position: relative
+}
+.mobile-stats .stat {
+    padding: 4px
+}
+.stats .col-xs-6 {
+    background: #f1f1f1
+}
+.face {
+    background: #000;
+    background-size: cover;
+    padding: 0;
+    position: relative;
+    height: 170px
+}
+.face img {
+    margin: auto;
+    text-align: center
+}
+.face .info {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .07) 12%, rgba(0, 0, 0, .5) 90%, rgba(0, 0, 0, .6) 100%);
+    bottom: 0;
+    color: #fff;
+    padding: 4px 8px;
+    padding-top: 15px;
+    position: absolute;
+    text-align: left;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+    font-family: 'Robotoregular', sans-serif;
+    width: 100%
+}
+.face .info .name {
+    font-size: 15px;
+    line-height: 15px
+}
+.face .info .title {
+    font-size: 14px;
+    line-height: 20px
+}
+.similar-date .face {
+    width: 120px;
+    height: 120px
+}
+.home-page .face .info .name {
+    font-size: 14px
+}
+.home-page .face .info .title {
+    font-size: 13px
+}
+.trending h3 {
+    width: 100%
+}
+.icn-arrow-up {
+    color: #0F0
+}
+.bio {
+    padding-bottom: 10px;
+    margin-top: -15px
+}
+.bio h2:first-child {
+    margin-top: 10px
+}
+.bio h2 .btn-edit {
+    float: right
+}
+.video-container h2 {
+    margin-top: 0
+}
+.popularity .btn-rank-wrapper {
+    padding: 5px
+}
+.similar-date h3 {
+    border: none;
+    color: #fff;
+    margin: 5px 0 10px;
+    padding: 0;
+    text-align: center
+}
+.similar-date .btn-default {
+    background: transparent;
+    border-color: rgba(255, 255, 255, .7);
+    color: #fff;
+    display: inline-block;
+    margin-top: 15px;
+    width: 100%
+}
+.same-month {
+    background: #E4138E;
+    padding: 5px 15px 15px
+}
+.same-sign {
+    background: #333;
+    padding: 5px 15px 15px
+}
+.similar-date a {
+    color: #fff!important
+}
+.same-month,
+.same-sign {
+    margin-top: 30px
+}
+.face-wrapper {
+    padding: 0 15px
+}
+.face-cta {
+    padding: 0 14px
+}
+.video-container {
+    min-width: 300px;
+    margin-left: -14px
+}
+.pop1,
+.adspot3,
+.adspot6 {
+    display: none
+}
+.pop1 h3 {
+    margin-top: 0
+}
+.also-viewed,
+.group-also-viewed,
+.member-of {
+    padding: 0 15px
+}
+.also-viewed h3,
+.group-also-viewed h3,
+.member-of h3 {
+    margin-left: -15px;
+    margin-right: -15px
+}
+.group-also-viewed a:last-child {
+    display: none
+}
+.footer-wrapper {
+    background: #eee;
+    margin-top: 20px
+}
+.footer-wrapper footer {
+    padding: 15px 0
+}
+.footer-wrapper footer ul {
+    font-family: 'Robotoregular';
+    font-size: 13px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center
+}
+.footer-wrapper footer ul li {
+    display: inline-block
+}
+.footer-wrapper footer ul.social {
+    margin-bottom: 15px
+}
+.footer-wrapper footer ul.social li a.icn {
+    color: #777;
+    font-size: 32px;
+    padding: 0 8px
+}
+.footer-wrapper footer ul.quick-links li {}.footer-wrapper footer ul.quick-links li:after {
+    content: "/";
+    padding: 0 8px
+}
+.footer-wrapper footer ul.quick-links li:last-child:after {
+    content: ""
+}
+.footer-wrapper footer ul.copyright {
+    color: #777
+}
+.footer-wrapper footer ul.copyright li {
+    padding-left: 20px
+}
+.footer-wrapper footer .brand {
+    background-image: url(/static/img/famous-birthdays-logo-lgt-gry.svg);/*file anh o phan chan trang*/
+    background-size: 245px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90px;
+    width: 100%;
+    margin-top: 10px;
+    display: block
+}
+.footer-wrapper a {
+    color: #888
+}
+.footer-wrapper footer ul.social li a.icn:hover,
+.footer-wrapper a:hover {
+    color: #444
+}
+.also-viewed .face,
+.member-of .face {
+    width: 135px;
+    height: 135px
+}
+.row.is-flex {
+    display: flex;
+    flex-wrap: wrap
+}
+.is-flex .box {
+    position: static
+}
+.no-gutter>[class*='col-'] {
+    padding-right: 0;
+    padding-left: 0
+}
+.well,
+.content-container {
+    background-color: rgba(200, 200, 200, .25);
+    border: 1px solid #e9e9e9
+}
+.content-container {
+    padding: 15px 15px 20px 15px
+}
+.content-container h1 {
+    color: #E4138E
+}
+.notfound-container {
+    padding: 0
+}
+.heading-container {
+    margin-bottom: 25px
+}
+.heading-container .page-title {
+    font-size: 34px
+}
+.page-title small {
+    font-size: 18px;
+    margin-left: 3px;
+    color: rgb(51, 51, 51)
+}
+.list-page .heading-container {
+    margin-bottom: 15px
+}
+.main-section .adspot1 {
+    margin-bottom: 15px
+}
+.page-subtitle {
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 15px
+}
+
+.list-page {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed
+}
+.list-title {
+    background-color: #777;
+    border-radius: 6px 6px 0 0;
+    background: linear-gradient(to bottom, rgba(228, 19, 142, .9) 20%, rgba(228, 19, 142, .7) 90%, rgba(228, 19, 142, .9) 100%)
+}
+.list-title-grey {
+    background-color: #EEE;
+    border-radius: 6px 6px 0 0
+}
+.list-title p,
+.list-title-grey p {
+    text-align: center;
+    color: #fff
+}
+.list-title h1 {
+    color: #fff;
+    margin: 0;
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .5)
+}
+.list-title-grey h2 {
+    color: #E4138E;
+    margin: 0;
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 20px
+}
+.list-title h3 {
+    color: #fff;
+    margin: 0;
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+    border: none;
+    font-family: 'robotolight', sans-serif
+}
+.list-sub-nav {
+    background-color: #f1f1f1;
+    padding-bottom: 8px;
+    padding-top: 5px;
+    margin-top: -7px
+}
+.list-sub-nav .col-xs-4,
+.list-sub-nav .col-xs-3,
+.list-sub-nav .col-xs-2 {
+    margin: 0;
+    padding-left: 2px;
+    padding-right: 2px
+}
+.group-stats .main-stats {
+    margin-bottom: 25px
+}
+.sn-label {
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 12px;
+    color: #999
+}
+.sn-value {
+    font-size: 14px;
+    line-height: 15px
+}
+.sn-value a {
+    color: #333
+}
+.sn-value a:hover,
+.sn-value a:focus {
+    color: #c10c77;
+    text-decoration: none
+}
+.info-text-row {
+    background-color: #f1f1f1;
+    border-top: 1px solid #ddd;
+    padding-top: 7px;
+    margin-bottom: 8px;
+    color: #666
+}
+.info-text p {
+    padding: 0 8px
+}
+.list-label {
+    margin-top: 0;
+    font-size: 18px;
+    border-bottom: 3px solid #ddd;
+    padding-top: 5px;
+    padding-bottom: 4px
+}
+.home-page .face-cta {
+    padding: 15px
+}
+.list-title-sub h3 {
+    margin: -3px 0 7px;
+    text-align: center;
+    font-size: 22px
+}
+.list-title h1 {
+    color: #fff;
+    margin: 0;
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .5)
+}
+.list-title-test h1 {
+    color: #E4138E;
+    margin: 0;
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 20px
+}
+.is-bday {
+    color: #000;
+    font-size: 14px;
+    font-weight: 900
+}
+.home-page .person-item,
+.person-item {
+    width: 150px;
+    height: 150px;
+    float: left;
+    display: block
+}
+.person-item-small {
+    width: 150px;
+    height: 150px;
+    float: left;
+    display: block
+}
+.trivia-row .person-item {
+    width: 134px;
+    height: 134px
+}
+.todays-birthdays h2 {
+    padding-left: 5px
+}
+.static-bdays .person-item-small {
+    width: 135px;
+    height: 135px
+}
+.cta-overlay:before,
+.todays-birthdays .person-item-small:last-child:before {
+    background: rgba(228, 19, 142, .49);
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: relative
+}
+.cta-container .person-item-small {
+    width: 100px;
+    height: 100px
+}
+.cta-container .col-sm-6 {
+    padding: 0;
+    margin-top: 15px
+}
+.face.last-face-cta .info {
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.face.last-face-cta .info .btn-default {
+    position: relative;
+    text-shadow: none;
+    z-index: 999
+}
+.face.last-face-cta .info .btn-default span {
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+    line-height: 1em;
+    color: rgba(255, 255, 255, .7);
+    white-space: normal
+}
+.info .btn-default,
+.cta-container .btn-default {
+    background: transparent;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    margin-top: 15px;
+    margin: 0;
+    font-size: 20px
+}
+.icn-rank {
+    font-size: 34px;
+    text-shadow: 1px 1px rgba(0, 0, 0, .4)
+}
+.icn-rank .rank {
+    color: #fff;
+    font-family: 'Robotoregular', sans-serif;
+    position: absolute;
+    text-shadow: 1px 1px rgba(0, 0, 0, .4);
+    text-align: center;
+    font-size: 14px;
+    top: 11px;
+    left: 0;
+    width: 35px;
+    height: 20px
+}
+.cta-container {
+    padding: 6px 0 12px 0
+}
+.cta-container .btn-lg {
+    margin-top: 10px
+}
+.cta-container h3 {
+    margin: 0 0 10px
+}
+.cta-container .recently-added {
+    margin-top: 20px
+}
+.cta-btn-container {
+    padding: 0
+}
+.cta-btn-container .icn-angle-right {
+    position: absolute;
+    right: 31px;
+    width: 35px;
+    font-weight: 700;
+    font-size: 23px
+}
+.face-cta .icn-angle-right {
+    right: 11px;
+    width: 35px;
+    font-weight: 700;
+    font-size: 14px;
+    position: absolute;
+    bottom: 25px
+}
+.cta-btn-container:last-child {
+    margin-top: 20px
+}
+.contact-info {
+    padding: 12px
+}
+.contact-info .icn {
+    color: #777;
+    font-size: 30px
+}
+.contact-info h2 {
+    margin: 0
+}
+.team-item {
+    padding: 1px
+}
+.team-item:hover {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 40px;
+    padding: 0
+}
+.terms-content {
+    padding-left: 15px;
+    padding-right: 15px
+}
+.static-content ol {
+    list-style: decimal
+}
+.static-content ul {
+    list-style: circle
+}
+#btn-group-edit {
+    margin-top: 0;
+    padding: 1px 5px
+}
+.balloon>div:before {
+    position: absolute;
+    content: "▲";
+    font-size: 1em
+}
+.balloon>div {
+    border-radius: 0;
+    border-radius: 80% 80% 80% 80%;
+    margin: 0 auto;
+    position: absolute;
+    padding: 10px;
+    opacity: .8;
+    -webkit-transform-origin: bottom center
+}
+.balloon .balloon1 {
+    background: rgba(228, 19, 142, .9);
+    box-shadow: inset 10px 10px 10px rgb(255, 80, 183);
+    -webkit-animation: balloon1 6s ease-in-out infinite;
+    -moz-animation: balloon1 6s ease-in-out infinite;
+    -o-animation: balloon1 6s ease-in-out infinite;
+    animation: balloon1 6s ease-in-out infinite;
+    &:before {
+        color: rgba(228, 19, 142, .9)
+    }
+}
+.balloon1:before {
+    color: rgba(228, 19, 142, .9)
+}
+.balloon1>i {
+    color: rgba(255, 255, 255, .1)
+}
+.balloon .balloon2 {
+    background: rgba(14, 19, 200, .75);
+    box-shadow: inset 10px 10px 10px darken(rgba(14, 19, 200, .75), 50%);
+    -webkit-animation: balloon2 6s ease-in-out infinite;
+    -moz-animation: balloon2 6s ease-in-out infinite;
+    -o-animation: balloon2 6s ease-in-out infinite;
+    animation: balloon2 6s ease-in-out infinite;
+    &:before {
+        color: rgba(14, 19, 200, .75)
+    }
+}
+.balloon2:before {
+    color: rgba(14, 19, 200, .75)
+}
+.balloon .balloon3 {
+    background: rgba(76, 228, 19, .93);
+    box-shadow: inset 10px 10px 10px rgba(133, 236, 94, .75);
+    -webkit-animation: balloon3 9s ease-in-out infinite;
+    -moz-animation: balloon3 9s ease-in-out infinite;
+    -o-animation: balloon4 9s ease-in-out infinite;
+    animation: balloon3 9s ease-in-out infinite;
+    &:before {
+        color: rgba(76, 228, 19, .75)
+    }
+}
+.balloon3:before {
+    color: rgba(76, 228, 19, .75)
+}
+.balloon .balloon4 {
+    background: rgba(241, 239, 32, .9);
+    box-shadow: inset 10px 10px 10px rgba(255, 253, 18, .9);
+    -webkit-animation: balloon4 7s ease-in-out infinite;
+    -moz-animation: balloon4 7s ease-in-out infinite;
+    -o-animation: balloon4 7s ease-in-out infinite;
+    animation: balloon4 7s ease-in-out infinite;
+    &:before {
+        color: rgba(241, 239, 32, .9)
+    }
+}
+.balloon4:before {
+    color: rgba(241, 239, 32, .9)
+}
+.balloon .balloon5 {
+    background: rgba(228, 19, 142, .9);
+    box-shadow: inset 10px 10px 10px rgb(255, 80, 183);
+    -webkit-animation: balloon4 14s ease-in-out infinite;
+    -moz-animation: balloon4 14s ease-in-out infinite;
+    -o-animation: balloon4 14s ease-in-out infinite;
+    animation: balloon4 14s ease-in-out infinite;
+    &:before {
+        color: rgba(241, 239, 32, .9)
+    }
+}
+.balloon5:before {
+    color: rgba(228, 19, 142, .9)
+}
+.balloon .balloon6 {
+    background: rgba(241, 239, 32, .9);
+    box-shadow: inset 10px 10px 10px rgba(255, 253, 18, .9);
+    -webkit-animation: balloon1 11s ease-in-out infinite;
+    -moz-animation: balloon1 11s ease-in-out infinite;
+    -o-animation: balloon1 11s ease-in-out infinite;
+    animation: balloon1 11s ease-in-out infinite;
+    &:before {
+        color: rgba(241, 239, 32, .9)
+    }
+}
+.balloon6:before {
+    color: rgba(241, 239, 32, .9)
+}
+.balloon .balloon7 {
+    background: rgba(14, 19, 200, .75);
+    box-shadow: inset 10px 10px 10px darken(rgba(14, 19, 200, .75), 50%);
+    -webkit-animation: balloon4 6s ease-in-out infinite;
+    -moz-animation: balloon4 6s ease-in-out infinite;
+    -o-animation: balloon4 6s ease-in-out infinite;
+    animation: balloon4 6s ease-in-out infinite;
+    &:before {
+        color: rgba(14, 19, 200, .75)
+    }
+}
+.balloon7:before {
+    color: rgba(14, 19, 200, .75)
+}
+.balloon .balloon8 {
+    background: rgba(228, 19, 142, .9);
+    box-shadow: inset 10px 10px 10px rgb(255, 80, 183);
+    -webkit-animation: balloon2 8s ease-in-out infinite;
+    -moz-animation: balloon2 8s ease-in-out infinite;
+    -o-animation: balloon2 8s ease-in-out infinite;
+    animation: balloon2 8s ease-in-out infinite;
+    &:before {
+        color: rgba(228, 19, 142, .9)
+    }
+}
+.balloon8:before {
+    color: rgba(228, 19, 142, .9)
+}
+.balloon .balloon9 {
+    background: rgba(76, 228, 19, .93);
+    box-shadow: inset 10px 10px 10px rgba(133, 236, 94, .75);
+    -webkit-animation: balloon3 7s ease-in-out infinite;
+    -moz-animation: balloon3 7s ease-in-out infinite;
+    -o-animation: balloon3 7s ease-in-out infinite;
+    animation: balloon3 7s ease-in-out infinite;
+    &:before {
+        color: rgba(76, 228, 19, .75)
+    }
+}
+.balloon9:before {
+    color: rgba(76, 228, 19, .75)
+}
+.balloon .balloon10 {
+    background: rgba(228, 19, 142, .9);
+    box-shadow: inset 10px 10px 10px rgb(255, 80, 183);
+    -webkit-animation: balloon4 14s ease-in-out infinite;
+    -moz-animation: balloon4 14s ease-in-out infinite;
+    -o-animation: balloon4 14s ease-in-out infinite;
+    animation: balloon4 14s ease-in-out infinite;
+    &:before {
+        color: rgba(241, 239, 32, .9)
+    }
+}
+.balloon10:before {
+    color: rgba(228, 19, 142, .9)
+}
+.balloon .balloon1 {
+    width: 56px;
+    height: 63px;
+    left: 19px;
+    top: 615px
+}
+.balloon1:before {
+    bottom: -12px;
+    left: 26px
+}
+.balloon1>i {
+    font-size: 45px
+}
+.balloon .balloon2 {
+    width: 33px;
+    height: 44px;
+    left: 13px;
+    top: 580px
+}
+.balloon2:before {
+    bottom: -13px;
+    left: 11px;
+    font-size: 0.7em!important
+}
+.balloon .balloon3 {
+    width: 55px;
+    height: 70px;
+    left: 30px;
+    top: 481px
+}
+.balloon3:before {
+    bottom: -13px;
+    left: 26px
+}
+.balloon .balloon4 {
+    width: 82px;
+    height: 96px;
+    left: 19px;
+    top: 10px;
+    display: none
+}
+.balloon4:before {
+    bottom: -13px;
+    left: 35px
+}
+.balloon4>i {
+    font-size: 105px
+}
+.balloon5:before {
+    bottom: -11px;
+    left: 17px;
+    bottom: -12px;
+    left: 16px;
+    font-size: 0.63em!important;
+    display: none
+}
+.balloon .balloon5 {
+    width: 47px;
+    height: 57px;
+    left: 160px;
+    top: 228px;
+    display: none
+}
+.balloon .balloon6 {
+    width: 67px;
+    height: 75px;
+    right: 21px;
+    top: 614px
+}
+.balloon6:before {
+    bottom: -12px;
+    left: 30px
+}
+.balloon .balloon7 {
+    width: 38px;
+    height: 48px;
+    right: 11px;
+    top: 541px
+}
+.balloon7:before {
+    bottom: -11px;
+    left: 15px;
+    font-size: 0.75em!important
+}
+.balloon .balloon8 {
+    width: 51px;
+    height: 65px;
+    right: 11px;
+    top: 496px
+}
+.balloon8:before {
+    bottom: -13px;
+    left: 18px
+}
+.balloon .balloon9 {
+    width: 45px;
+    height: 57px;
+    right: -38px;
+    top: 526px;
+    display: none
+}
+.balloon9:before {
+    bottom: -13px;
+    left: 17px
+}
+.balloon .balloon10 {
+    width: 47px;
+    height: 57px;
+    right: 0;
+    top: 278px;
+    display: none
+}
+.balloon10:before {
+    bottom: -12px;
+    left: 18px;
+    font-size: 0.63em!important
+}
+@-webkit-keyframes balloon1 {
+    0%, 100% {
+        -webkit-transform: translateY(0) rotate(-6deg)
+    }
+    50% {
+        -webkit-transform: translateY(-20px) rotate(8deg)
+    }
+}
+@-moz-keyframes balloon1 {
+    0%, 100% {
+        -moz-transform: translateY(0) rotate(-6deg)
+    }
+    50% {
+        -moz-transform: translateY(-20px) rotate(8deg)
+    }
+}
+@-o-keyframes balloon1 {
+    0%, 100% {
+        -o-transform: translateY(0) rotate(-6deg)
+    }
+    50% {
+        -o-transform: translateY(-20px) rotate(8deg)
+    }
+}
+@keyframes balloon1 {
+    0%, 100% {
+        transform: translateY(0) rotate(-6deg)
+    }
+    50% {
+        transform: translateY(-20px) rotate(8deg)
+    }
+}
+@-webkit-keyframes balloon2 {
+    0%, 100% {
+        -webkit-transform: translateY(0) rotate(6eg)
+    }
+    50% {
+        -webkit-transform: translateY(-30px) rotate(-8deg)
+    }
+}
+@-moz-keyframes balloon2 {
+    0%, 100% {
+        -moz-transform: translateY(0) rotate(6deg)
+    }
+    50% {
+        -moz-transform: translateY(-30px) rotate(-8deg)
+    }
+}
+@-o-keyframes balloon2 {
+    0%, 100% {
+        -o-transform: translateY(0) rotate(6deg)
+    }
+    50% {
+        -o-transform: translateY(-30px) rotate(-8deg)
+    }
+}
+@keyframes balloon2 {
+    0%, 100% {
+        transform: translateY(0) rotate(6deg)
+    }
+    50% {
+        transform: translateY(-30px) rotate(-8deg)
+    }
+}
+@-webkit-keyframes balloon3 {
+    0%, 100% {
+        -webkit-transform: translate(10px, -10px) rotate(-8eg)
+    }
+    50% {
+        -webkit-transform: translate(-15px, 20px) rotate(10deg)
+    }
+}
+@-moz-keyframes balloon3 {
+    0%, 100% {
+        -moz-transform: translate(10px, -10px) rotate(-8eg)
+    }
+    50% {
+        -moz-transform: translate(-15px, 10px) rotate(10deg)
+    }
+}
+@-o-keyframes balloon3 {
+    0%, 100% {
+        -o-transform: translate(10px, -10px) rotate(-8eg)
+    }
+    50% {
+        -o-transform: translate(-15px, 10px) rotate(10deg)
+    }
+}
+@keyframes balloon3 {
+    0%, 100% {
+        transform: translate(10px, -10px) rotate(-8eg)
+    }
+    50% {
+        transform: translate(-15px, 10px) rotate(10deg)
+    }
+}
+@-webkit-keyframes balloon4 {
+    0%, 100% {
+        -webkit-transform: translate(0, -10px) rotate(6eg)
+    }
+    50% {
+        -webkit-transform: translate(-20px, 30px) rotate(-8deg)
+    }
+}
+@-moz-keyframes balloon4 {
+    0%, 100% {
+        -moz-transform: translate(0, -10px) rotate(6eg)
+    }
+    50% {
+        -moz-transform: translate(-20px, 30px) rotate(-8deg)
+    }
+}
+@-o-keyframes balloon4 {
+    0%, 100% {
+        -o-transform: translate(0, -10px) rotate(6eg)
+    }
+    50% {
+        -o-transform: translate(-20px, 30px) rotate(-8deg)
+    }
+}
+@keyframes balloon4 {
+    0%, 100% {
+        transform: translate(0, -10px) rotate(6eg)
+    }
+    50% {
+        transform: translate(-20px, 30px) rotate(-8deg)
+    }
+}
+.jssorb13 {
+    position: absolute
+}
+.jssorb13 div,
+.jssorb13 div:hover,
+.jssorb13 .av {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: url(/img/bullets-2.png?1) no-repeat;
+    overflow: hidden;
+    cursor: pointer
+}
+.jssorb13 div {
+    background-position: -5px -5px
+}
+.jssorb13 div:hover,
+.jssorb13 .av:hover {
+    background-position: -25px -5px
+}
+.jssorb13 .av {
+    background-position: -45px -5px
+}
+.jssorb13 .dn,
+.jssorb13 .dn:hover {
+    background-position: -95px -5px
+}
+.jssorb14 {
+    position: absolute;
+    padding-bottom: 14px
+}
+.jssorb14 div,
+.jssorb14 div:hover,
+.jssorb14 .av {
+    position: absolute;
+    width: 11px;
+    height: 10px;
+    background: url(/img/bullets-4.png) no-repeat;
+    overflow: hidden;
+    cursor: pointer
+}
+.jssorb14 div {
+    background-position: -8px -8px
+}
+.jssorb14 div:hover,
+.jssorb14 .av:hover {
+    background-position: -35px -8px
+}
+.jssorb14 .av {
+    background-position: -62px -8px
+}
+.jssorb14 .dn,
+.jssorb14 .dn:hover {
+    background-position: -89px -8px
+}
+.jssora14l,
+.jssora14r {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    cursor: pointer;
+    background: url(/img/slider-arrows.png) no-repeat;
+    overflow: hidden
+}
+.jssora14l {
+    background-position: -15px -35px
+}
+.jssora14r {
+    background-position: -75px -35px
+}
+.jssora14l:hover {
+    background-position: -135px -35px
+}
+.jssora14r:hover {
+    background-position: -195px -35px
+}
+.jssora14l.jssora14ldn {
+    background-position: -255px -35px
+}
+.jssora14r.jssora14rdn {
+    background-position: -315px -35px
+}
+.hsign,
+[class*=hsign-] {
+    background-image: url(/img/horoscope-sign.png);
+    background-repeat: no-repeat;
+    vertical-align: text-top
+}
+.zodiac-block {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-top: 8px
+}
+.zodiac-block i {
+    width: 75px;
+    height: 75px;
+    display: block;
+    margin: 26px auto
+}
+.zodiac-block>.thumb {
+    height: 128px;
+    width: 128px;
+    float: left;
+    background-color: #ccc;
+    margin-right: 12px;
+    border-radius: 3px
+}
+.zodiac-block .hsign-aries {
+    background-position: 0 0
+}
+.zodiac-block .hsign-taurus {
+    background-position: 0 -100px
+}
+.zodiac-block .hsign-gemini {
+    background-position: 0 -200px
+}
+.zodiac-block .hsign-cancer {
+    background-position: 0 -300px
+}
+.zodiac-block .hsign-leo {
+    background-position: 0 -400px
+}
+.zodiac-block .hsign-virgo {
+    background-position: 0 -500px
+}
+.zodiac-block .hsign-libra {
+    background-position: 0 -600px
+}
+.zodiac-block .hsign-scorpio {
+    background-position: 0 -700px
+}
+.zodiac-block .hsign-sagittarius {
+    background-position: 0 -800px
+}
+.zodiac-block .hsign-capricorn {
+    background-position: 0 -900px
+}
+.zodiac-block .hsign-aquarius {
+    background-position: 0 -1000px
+}
+.zodiac-block .hsign-pisces {
+    background-position: 0 -1100px
+}
+.zodiac-block .hsign-planetary {
+    background-position: 0 -1300px
+}
+.zodiac-block .hsign-career {
+    background-position: 0 -1400px
+}
+.zodiac-block .hsign-sabian {
+    background-position: 0 -1500px
+}
+.zodiac-block .hsign-relationships {
+    background-position: 0 -1600px
+}
+.zodiac-index-container {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto
+}
+.zodiac-index-container img {
+    padding-top: 5px;
+    padding-bottom: 20px
+}
+.calender-view .calender-block {
+    height: 158px;
+    background: #FCE5F3;
+    border-radius: 3px;
+    border: 1px solid #fefefe
+}
+.calender-block:hover .calender-block-content>.title,
+.calender-block:hover .calender-block-content>.year-list>a,
+.calender-block:hover .initial,
+.calender-block:hover .sign-block>.title {
+    color: #fff;
+    border-color: #fff
+}
+.calender-block .initial {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 42px;
+    height: 42px;
+    border: 2px solid #A0949B;
+    color: #A0949B;
+    font-size: 24px;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 50px
+}
+.calender-block-content {
+    position: absolute;
+    left: 0;
+    bottom: 16px
+}
+.calender-block-content>.title {
+    border-left: 2px solid #EF008E;
+    padding: 0 14px;
+    color: #EF008E;
+    font: 24px/120% robotoregular, sans-serif
+}
+.days-nav .title {
+    float: left;
+    min-width: 265px;
+    font-weight: 700;
+    font-size: 18px
+}
+.days-nav {
+    margin-bottom: 20px
+}
+.days-nav a {
+    padding: 6px;
+    color: #777
+}
+.days-nav a:hover {
+    border: 1px solid #ccc;
+    padding: 5px;
+    color: #777
+}
+.horoscope-calendar a {
+    height: 158px;
+    background: #FCE5F3;
+    border-radius: 3px;
+    border: 1px solid #fefefe;
+    padding-top: 75px;
+    font-size: 26px
+}
+.horoscope-calendar a:hover {
+    background: #E4138E;
+    color: #fff;
+    text-decoration: none
+}
+.no-date-born-container {
+    padding-top: 20px;
+    padding-bottom: 10px
+}
+.edits-container {
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+.edits-container .btn-lg {
+    margin-top: 20px
+}
+.trivia-correct:before {
+    background: linear-gradient(to bottom, rgba(0, 255, 0, .4) 5%, rgba(0, 255, 0, .5) 100%);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    height: 29px
+}
+.trivia-incorrect:before {
+    background: linear-gradient(to bottom, rgba(255, 0, 0, .4) 5%, rgba(255, 0, 0, .5) 100%);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    height: 29px
+}
+.trivia-correct .icn-check {
+    font-size: 28px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+    position: absolute;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(0, 255, 0, .5) 5%, rgba(0, 255, 0, .6) 100%);
+    color: #fff;
+    padding: 5px;
+    border: 1px solid rgba(100, 100, 100, .1)
+}
+.trivia-incorrect .icn-close {
+    font-size: 28px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+    position: absolute;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(255, 0, 0, .5) 5%, rgba(255, 0, 0, .6) 100%);
+    color: #fff;
+    padding: 5px;
+    border: 1px solid rgba(100, 100, 100, .1)
+}
+* .ui-menu {
+    padding: 2px;
+    margin: 0
+}
+* .ui-autocomplete {
+    position: absolute;
+    cursor: default
+}
+* .ui-accordion .ui-accordion-content-active,
+* .ui-menu {
+    display: block
+}
+* .ui-corner-all {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px
+}
+* .ui-widget-content {
+    border: 1px solid #aaa;
+    background: 50% 50% repeat-x #fff;
+    color: #222
+}
+* .ui-widget {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 14px
+}
+* .ui-menu,
+.sbOptions,
+.ui-helper-reset,
+nav ol,
+nav ul {
+    list-style: none
+}
+* .ui-menu .ui-menu-item a {
+    text-decoration: none;
+    display: block;
+    padding: .7em .4em .7em .6em;
+    border: 1px solid #d8d8d8;
+    line-height: 1.5;
+    zoom: 1;
+    cursor: pointer
+}
+* .ui-menu .ui-menu-item a:hover {
+    background-color: #ddd
+}
+* .ui-widget-content a,
+* .ui-widget-header,
+* .ui-widget-header a {
+    color: #222
+}
+* .ui-corner-all {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px
+}
+.autocomplete-suggestions {
+    border: 1px solid #aaa;
+    background: 50% 50% repeat-x #fff;
+    color: #222;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 14px;
+    padding: 2px;
+    margin: 0
+}
+.autocomplete-suggestion {
+    text-decoration: none;
+    display: block;
+    padding: .7em .4em .7em .6em;
+    border: 1px solid #d8d8d8;
+    line-height: 1.5;
+    zoom: 1;
+    cursor: pointer;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    font-weight: 700
+}
+.autocomplete-suggestion span {
+    font-weight: 400
+}
+.autocomplete-suggestion a {
+    color: #222
+}
+.autocomplete-suggestion:hover {
+    background-color: #ddd
+}
+.hidden-xxs {
+    display: none
+}
+@media (min-width: 374px) {
+    .container {
+        width: 374px
+    }
+    .home-page .person-item,
+    .person-item {
+        width: 187px;
+        height: 187px
+    }
+    .person-item-small {
+        width: 124px;
+        height: 124px
+    }
+    .trivia-row .person-item {
+        width: 171px;
+        height: 171px
+    }
+    .cta-container .person-item-small {
+        width: 124px;
+        height: 124px
+    }
+    .static-bdays .person-item-small {
+        width: 114px;
+        height: 114px
+    }
+    .img-src {
+        bottom: 3px;
+        left: 40px
+    }
+    .img-src-overlay {
+        left: 50px
+    }
+    .also-viewed .face,
+    .member-of .face {
+        width: 172px;
+        height: 172px
+    }
+    .similar-date .face {
+        width: 157px;
+        height: 157px
+    }
+    .adspot1 {
+        margin-left: 0
+    }
+    .hidden-xxs {
+        display: block
+    }
+    .img1 {
+        margin-left: 0
+    }
+    .nav .brand {
+        margin-left: 0
+    }
+    .video-container {
+        margin-left: 0
+    }
+    .group-about h2 {
+        margin-top: 20px
+    }
+}
+@media (min-width: 460px) {
+    .container {
+        width: 450px
+    }
+    .person-item {
+        width: 150px;
+        height: 150px
+    }
+    .img-src {
+        bottom: 2px;
+        left: 80px
+    }
+    .home-page .person-item {
+        width: 225px;
+        height: 225px
+    }
+    .person-item-small {
+        width: 150px;
+        height: 150px
+    }
+    .trivia-row .person-item {
+        width: 207px;
+        height: 207px
+    }
+    .cta-container .person-item-small {
+        width: 150px;
+        height: 150px
+    }
+    .static-bdays .person-item-small {
+        width: 140px;
+        height: 140px
+    }
+    .also-viewed .face,
+    .member-of .face {
+        width: 210px;
+        height: 210px
+    }
+    .group-also-viewed .face {
+        width: 210px;
+        height: 210px
+    }
+    .similar-date .face {
+        width: 195px;
+        height: 195px
+    }
+    .stats {
+        padding: 25px 0 0
+    }
+    .group-stats {
+        padding: 0
+    }
+    .group-stats-container {
+        margin-bottom: -16px
+    }
+    .stats .main-stats {
+        display: block
+    }
+    .stats .mobile-stats {
+        display: none
+    }
+    .group-stats .main-stats {
+        display: none
+    }
+    .group-stats .mobile-stats {
+        display: block
+    }
+    h2 {
+        font-size: 18px
+    }
+    .img-src-overlay {
+        left: 90px
+    }
+    .group-about h2 {
+        margin-top: 35px
+    }
+    .is-bday {
+        font-size: 10px;
+        font-weight: 400
+    }
+}
+@media (min-width: 600px) {
+    .balloon .balloon1 {
+        width: 72px;
+        height: 83px;
+        left: 59px;
+        top: 585px
+    }
+    .balloon1:before {
+        bottom: -11px;
+        left: 35px
+    }
+    .balloon1>i {
+        font-size: 45px
+    }
+    .balloon .balloon2 {
+        width: 33px;
+        height: 44px;
+        left: 113px;
+        top: 553px
+    }
+    .balloon2:before {
+        bottom: -13px;
+        left: 11px;
+        font-size: 0.7em!important
+    }
+    .balloon .balloon3 {
+        width: 69px;
+        height: 95px;
+        left: 68px;
+        top: 458px
+    }
+    .balloon3:before {
+        bottom: -13px;
+        left: 26px
+    }
+    .balloon .balloon4 {
+        width: 82px;
+        height: 96px;
+        left: 19px;
+        top: 10px;
+        display: none
+    }
+    .balloon4:before {
+        bottom: -13px;
+        left: 35px
+    }
+    .balloon4>i {
+        font-size: 105px
+    }
+    .balloon .balloon6 {
+        width: 87px;
+        height: 110px;
+        right: 62px
+    }
+    .balloon .balloon7 {
+        width: 38px;
+        height: 48px;
+        right: 81px;
+        top: 521px
+    }
+    .balloon .balloon8 {
+        width: 60px;
+        height: 72px;
+        right: 44px;
+        top: 506px
+    }
+    .balloon8:before {
+        bottom: -13px;
+        left: 27px
+    }
+    .balloon .balloon10 {
+        width: 47px;
+        height: 57px;
+        right: 0;
+        top: 278px;
+        display: none
+    }
+    .balloon10:before {
+        bottom: -12px;
+        left: 18px;
+        font-size: 0.63em!important
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        width: 749px
+    }
+    .nav .brand {
+        background-image: url(/static/img/famous-birthdays-logo-rgb.svg);/*logo dau trang*/ 
+        height: 56px;
+        width: 100%
+    }
+    .nav .search {
+        margin-top: 8px
+    }
+    .nav .quick-links {
+        display: block
+    }
+    .static-search {
+        max-width: 340px;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .main-info h1 {
+        text-align: left;
+        font-size: 34px
+    }
+    .stats {
+        padding: 35px 15px 0
+    }
+    .group-stats {
+        padding: 0
+    }
+    .img-src {
+        bottom: 3px;
+        left: 18px
+    }
+    .face .info {
+        padding: 6px 12px;
+        padding-top: 15px;
+        font-family: 'Robotolight', sans-serif
+    }
+    .face .info .name {
+        font-size: 15px;
+        line-height: 17px
+    }
+    .face .info .title {
+        font-size: 13px;
+        line-height: 18px
+    }
+    .home-page .face .info .name {
+        font-size: 17px
+    }
+    .home-page .face .info .title {
+        font-size: 14px
+    }
+    .trending h3 {
+        width: 97%
+    }
+    .bio h2:first-child {
+        margin-top: 15px
+    }
+    .similar-date .face {
+        height: 160px
+    }
+    .adspot1 {
+        margin-left: 0;
+        min-height: 110px
+    }
+    .adspot7 {
+        margin-left: 0
+    }
+    .adspot img {
+        max-width: none
+    }
+    .adspot4 {
+        display: none
+    }
+    .adspot6 {
+        display: block
+    }
+    body {
+        background-size: 1000px;
+        background-position: center;
+        background-image: url(/static/img/stars-bg.svg)/*hinh nen trang*/ 
+    }
+    h1 {
+        font-size: 38px
+    }
+    .footer-wrapper footer ul {
+        text-align: left
+    }
+    .footer-wrapper footer ul.social {
+        margin-top: 47px
+    }
+    .footer-wrapper footer ul.copyright {
+        text-align: right
+    }
+    .footer-wrapper footer .brand {
+        background-position: right;
+        width: 240px
+    }
+    .footer-wrapper footer {
+        padding: 0
+    }
+    .also-viewed .face,
+    .member-of .face {
+        width: 179px;
+        height: 179px
+    }
+    .group-also-viewed .face {
+        width: 178px;
+        height: 178px
+    }
+    .similar-date .face {
+        width: 164px;
+        height: 164px
+    }
+    .home-page .person-item,
+    .person-item {
+        width: 187px;
+        height: 187px
+    }
+    .person-item-small {
+        width: 124px;
+        height: 124px
+    }
+    .trivia-row .person-item {
+        width: 179px;
+        height: 179px
+    }
+    .cta-container .person-item-small {
+        width: 120px;
+        height: 120px
+    }
+    .person-item-small:nth-child(6n) {
+        width: 128px
+    }
+    .static-bdays .person-item-small {
+        width: 118px;
+        height: 118px
+    }
+    .cta-btn-container {
+        padding: 0 30px!important
+    }
+    .cta-btn-container:last-child {
+        margin-top: 15px
+    }
+    .icn-rank {
+        font-size: 44px
+    }
+    .icn-rank .rank {
+        font-size: 17px;
+        top: 15px;
+        left: 2px;
+        width: 40px;
+        height: 20px
+    }
+    .list-title h1,
+    .list-title-test h1 {
+        font-size: 23px
+    }
+    .list-title-sub h3 {
+        font-size: 24px
+    }
+    .sn-label {
+        display: inline;
+        text-transform: uppercase;
+        font-size: 12px
+    }
+    .sn-value {
+        display: inline;
+        font-size: 17px
+    }
+    .list-sub-nav {
+        padding-bottom: 8px;
+        background-color: #fff
+    }
+    .video-container .video-player {
+        padding-bottom: 15px;
+        border-bottom: 1px solid #bbb;
+        margin-bottom: 8px
+    }
+    .edits-container {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto
+    }
+    .cta-container {
+        padding: 10px 0 12px 0
+    }
+    .cta-container .col-sm-6 {
+        padding: 0 6px
+    }
+    .cta-container .col-sm-6:first-child {
+        padding-left: 0
+    }
+    .cta-container .col-sm-6:nth-last-child(2) {
+        padding-right: 0
+    }
+    .cta-container .recently-added {
+        margin-top: 15px
+    }
+    .img-src-overlay {
+        left: 30px
+    }
+    .group-stat-col,
+    .stats .col-xs-6 {
+        border-top: 1px solid #ddd
+    }
+    .group-stat-col:first-child,
+    .stats .col-xs-6:first-child {
+        border-top: none
+    }
+    .group-stats .main-stats {
+        display: block
+    }
+    .group-stats .mobile-stats {
+        display: none
+    }
+    .group-boost-main {
+        display: none
+    }
+    .group-boost-tablet {
+        display: block
+    }
+    .group-boost-mobile {
+        display: none
+    }
+    .is-bday {
+        font-size: 11px
+    }
+    .group-about h2 {
+        margin-top: 15px
+    }
+    .group-boost.btn-boost-wrap {
+        border-radius: 0;
+        border: 1px solid #ddd
+    }
+    .group-boost.btn-boost-wrap .rank-info {
+        border-radius: 0;
+        padding: 11px 19px
+    }
+    .group-boost .btn-boost {
+        border-radius: 0;
+        line-height: 2.5em
+    }
+    .balloon1,
+    .balloon2,
+    .balloon3,
+    .balloon4,
+    .balloon5,
+    .balloon6,
+    .balloon7,
+    .balloon8,
+    .balloon9,
+    .balloon10 {
+        display: none
+    }
+    .balloon .balloon6 {
+        width: 80px;
+        height: 95px;
+        right: 102px;
+        top: 198px;
+        display: block
+    }
+    .balloon .balloon8 {
+        width: 72px;
+        height: 83px;
+        right: 24px;
+        top: 191px;
+        display: block
+    }
+    .balloon .balloon9 {
+        width: 72px;
+        height: 86px;
+        right: 46px;
+        top: 241px;
+        display: block
+    }
+    .balloon9:before {
+        bottom: -13px;
+        left: 25px
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 968px
+    }
+    .nav .search {
+        margin-left: 17px
+    }
+    .nav .search .btn {
+        right: -16px
+    }
+    .main-info {
+        padding-top: 20px
+    }
+    .stats {
+        padding: 0
+    }
+    .stat {
+        padding: 4px 0 8px 40px;
+        position: relative
+    }
+    .face .info .name {
+        font-size: 18px
+    }
+    .home-page .face .info .name {
+        font-size: 17px
+    }
+    .home-page .face .info .title {
+        font-size: 16px
+    }
+    .trending h3 {
+        width: 98%
+    }
+    .img1 {
+        margin-bottom: 10px
+    }
+    .img-src {
+        bottom: 12px;
+        left: 20px
+    }
+    .also-viewed .face,
+    .member-of .face {
+        width: 150px;
+        height: 150px
+    }
+    .group-also-viewed .face {
+        width: 187px;
+        height: 187px
+    }
+    .group-also-viewed a:last-child {
+        display: block
+    }
+    .similar-date .face {
+        width: 138px;
+        height: 138px
+    }
+    .adspot5 {
+        display: none
+    }
+    .adspot3 {
+        display: block
+    }
+    .list-title h1,
+    .list-title-test h1 {
+        font-size: 26px
+    }
+    .list-title-sub h3 {
+        font-size: 26px
+    }
+    .face.last-face-cta .info .btn-default span {
+        font-size: 18px;
+        line-height: 1.1em
+    }
+    .home-page .person-item,
+    .person-item {
+        width: 242px;
+        height: 242px
+    }
+    .person-item-small {
+        width: 161px;
+        height: 161px
+    }
+    .trivia-row .person-item {
+        width: 234px;
+        height: 234px
+    }
+    .person-item-small:nth-child(6n) {
+        width: 163px
+    }
+    .static-bdays .person-item-small {
+        width: 155px;
+        height: 155px
+    }
+    .cta-container .person-item-small {
+        width: 157px;
+        height: 157px
+    }
+    body {
+        background-size: 1540px
+    }
+    .main-info h1 {
+        font-size: 36px
+    }
+    h1 {
+        font-size: 40px
+    }
+    .img-src-overlay {
+        left: 35px
+    }
+    .group-boost-main {
+        display: block
+    }
+    .group-boost-tablet {
+        display: none
+    }
+    .group-boost-mobile {
+        display: none
+    }
+    .is-bday {
+        font-size: 14px;
+        font-weight: 900
+    }
+    .balloon .balloon1 {
+        width: 87px;
+        height: 110px;
+        left: 11px;
+        top: 75px;
+        display: block
+    }
+    .balloon1:before {
+        bottom: -14px;
+        left: 40px
+    }
+    .balloon .balloon2 {
+        width: 51px;
+        height: 63px;
+        left: -2px;
+        top: 183px;
+        display: block
+    }
+    .balloon2:before {
+        bottom: -11px;
+        left: 17px
+    }
+    .balloon .balloon3 {
+        width: 66px;
+        height: 83px;
+        left: 73px;
+        top: 133px;
+        display: block
+    }
+    .balloon3:before {
+        bottom: -13px;
+        left: 27px
+    }
+    .balloon .balloon4 {
+        width: 95px;
+        height: 117px;
+        left: -5px;
+        top: 146px;
+        display: block
+    }
+    .balloon4:before {
+        bottom: -13px;
+        left: 35px
+    }
+    .balloon5:before {
+        bottom: -11px;
+        left: 17px;
+        bottom: -12px;
+        left: 16px;
+        font-size: 0.63em!important
+    }
+    .balloon .balloon5 {
+        width: 47px;
+        height: 57px;
+        left: 160px;
+        top: 228px;
+        display: none
+    }
+    .balloon .balloon6 {
+        width: 63px;
+        height: 72px;
+        right: 7px;
+        top: 104px;
+        display: block
+    }
+    .balloon6:before {
+        bottom: -14px;
+        left: 26px
+    }
+    .balloon .balloon7 {
+        width: 51px;
+        height: 63px;
+        right: 8px;
+        top: 183px;
+        display: block
+    }
+    .balloon7:before {
+        bottom: -11px;
+        left: 17px
+    }
+    .balloon .balloon8 {
+        width: 56px;
+        height: 67px;
+        right: 38px;
+        top: 60px;
+        display: block
+    }
+    .balloon8:before {
+        bottom: -13px;
+        left: 22px
+    }
+    .balloon .balloon9 {
+        width: 95px;
+        height: 117px;
+        right: 42px;
+        top: 76px;
+        display: block
+    }
+    .balloon9:before {
+        bottom: -13px;
+        left: 35px
+    }
+    .balloon10:before {
+        bottom: -11px;
+        left: 17px;
+        bottom: -12px;
+        left: 16px;
+        font-size: 0.63em!important
+    }
+    .balloon .balloon10 {
+        width: 47px;
+        height: 57px;
+        right: 160px;
+        top: 228px;
+        display: none
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1030px
+    }
+    .main-info {
+        padding-top: 30px
+    }
+    .also-viewed .face,
+    .member-of .face {
+        width: 185px;
+        height: 185px
+    }
+    .group-also-viewed .face {
+        height: 194px;
+        width: 194px
+    }
+    .similar-date .face {
+        width: 170px;
+        height: 170px
+    }
+    .pop1,
+    .adspot4 {
+        display: block
+    }
+    .img1 {
+        margin-right: 90px
+    }
+    .pop2 {
+        display: none
+    }
+    body {
+        background-size: 1200px
+    }
+    .home-page .person-item,
+    .person-item {
+        width: 250px;
+        height: 250px
+    }
+    .static-bdays .person-item-small,
+    .person-item-small {
+        width: 166px;
+        height: 166px
+    }
+    .trivia-row .person-item {
+        width: 249px;
+        height: 249px
+    }
+    .person-item-small:nth-child(6n) {
+        width: 170px
+    }
+    .cta-container .person-item-small {
+        width: 162px;
+        height: 162px
+    }
+    .people-list {
+        width: 1000px
+    }
+    .btn-rank {
+        min-height: 101px
+    }
+    .btn-rank .title {
+        min-height: 24px
+    }
+    .balloon .balloon1 {
+        width: 87px;
+        height: 110px;
+        left: 11px;
+        top: 75px
+    }
+    .balloon1:before {
+        bottom: -14px;
+        left: 40px
+    }
+    .balloon1>i {
+        font-size: 45px
+    }
+    .balloon .balloon2 {
+        width: 51px;
+        height: 63px;
+        left: -2px;
+        top: 183px
+    }
+    .balloon2:before {
+        bottom: -11px;
+        left: 17px
+    }
+    .balloon .balloon3 {
+        width: 96px;
+        height: 111px;
+        left: 61px;
+        top: 138px
+    }
+    .balloon3:before {
+        bottom: -13px;
+        left: 45px
+    }
+    .balloon .balloon4 {
+        width: 95px;
+        height: 117px;
+        left: 145px;
+        top: 76px;
+        display: block
+    }
+    .balloon4:before {
+        bottom: -13px;
+        left: 35px
+    }
+    .balloon4>i {
+        font-size: 105px
+    }
+    .balloon5:before {
+        bottom: -11px;
+        left: 17px;
+        bottom: -12px;
+        left: 16px;
+        font-size: 0.63em!important
+    }
+    .balloon .balloon5 {
+        width: 47px;
+        height: 57px;
+        left: 160px;
+        top: 228px
+    }
+    .balloon .balloon6 {
+        width: 87px;
+        height: 110px;
+        right: 17px;
+        top: 75px
+    }
+    .balloon6:before {
+        bottom: -14px;
+        left: 40px
+    }
+    .balloon .balloon7 {
+        width: 51px;
+        height: 63px;
+        right: 8px;
+        top: 183px
+    }
+    .balloon7:before {
+        bottom: -11px;
+        left: 17px
+    }
+    .balloon .balloon8 {
+        width: 96px;
+        height: 111px;
+        right: 61px;
+        top: 138px
+    }
+    .balloon8:before {
+        bottom: -13px;
+        left: 45px
+    }
+    .balloon .balloon9 {
+        width: 95px;
+        height: 117px;
+        right: 125px;
+        top: 76px;
+        display: block
+    }
+    .balloon9:before {
+        bottom: -13px;
+        left: 35px
+    }
+    .balloon10:before {
+        bottom: -11px;
+        left: 17px;
+        bottom: -12px;
+        left: 16px;
+        font-size: 0.63em!important
+    }
+    .balloon .balloon10 {
+        width: 47px;
+        height: 57px;
+        right: 160px;
+        top: 228px
+    }
+}
+.jw-related-container {
+    padding: 17px 37px!important
+}
+.jw-related-dock-btn {
+    display: none!important
+}
+.jw-related-item-next-up .jw-related-item-title strong {
+    margin-bottom: -23px!important;
+    color: rgba(255, 255, 255, .8)!important;
+    position: absolute!important;
+    z-index: 14!important
+}
+.jw-related-item-next-up .jw-related-item-title span {
+    padding-top: 26px!important
+}
+.jw-related-item-title {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .5)!important;
+    font-family: robotoregular!important
+}
+.jw-related-item-title strong {
+    font-size: 16px!important
+}
+.jw-related-item-title span {
+    color: rgba(255, 255, 255, .85)!important;
+    font-size: 18px!important
+}
+.jw-plugin-related {
+    display: none;
+    visibility: inherit!important
+}
+.jw-nextup-container {
+    display: none!important
+}
+@font-face {
+    font-family: 'famousbirthdays';
+    src: url(/static/fonts/famousbirthdays.ttf?twgd6c1) format('truetype'), url(/static/fonts/famousbirthdays.woff?twgd6c1) format('woff'), url('/static/fonts/famousbirthdays.svg?twgd6c1#famousbirthdays') format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+[class^="icn-"],
+[class*=" icn-"] {
+    font-family: 'famousbirthdays'!important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+.icn-developer:before {
+    content: "\e917"
+}
+.icn-nickname:before {
+    content: "\e918"
+}
+.icn-platform:before {
+    content: "\e919"
+}
+.icn-video-camera:before {
+    content: "\e91a"
+}
+.icn-arena:before {
+    content: "\e91b"
+}
+.icn-conference:before {
+    content: "\e91c"
+}
+.icn-genre:before {
+    content: "\e91d"
+}
+.icn-network:before {
+    content: "\e91e"
+}
+.icn-rating:before {
+    content: "\e91f"
+}
+.icn-arrow-down:before {
+    content: "\e913"
+}
+.icn-arrow-up:before {
+    content: "\e914"
+}
+.icn-angle-left:before {
+    content: "\e915"
+}
+.icn-angle-right:before {
+    content: "\e916"
+}
+.icn-edit:before {
+    content: "\e912"
+}
+.icn-icon-info:before {
+    content: "\e911"
+}
+.icn-search:before {
+    content: "\e910"
+}
+.icn-android:before {
+    content: "\e909"
+}
+.icn-facebook:before {
+    content: "\e90a"
+}
+.icn-instagram:before {
+    content: "\e90b"
+}
+.icn-ios:before {
+    content: "\e90c"
+}
+.icn-mail:before {
+    content: "\e90d"
+}
+.icn-twitter:before {
+    content: "\e90e"
+}
+.icn-email:before {
+    content: "\e90f"
+}
+.icn-star:before {
+    content: "\e907"
+}
+.icn-gallery-plus:before {
+    content: "\e908"
+}
+.icn-age:before {
+    content: "\e900"
+}
+.icn-birthday:before {
+    content: "\e901"
+}
+.icn-horiscope:before {
+    content: "\e902"
+}
+.icn-birthplace:before {
+    content: "\e903"
+}
+.icn-trending:before {
+    content: "\e904"
+}
+.icn-recent:before {
+    content: "\e905"
+}
+.icn-random:before {
+    content: "\e906"
+}
+.icn-check:before {
+    content: "\f00c"
+}
+.icn-close:before {
+    content: "\f00d"
+}
+.icn-remove:before {
+    content: "\f00d"
+}
+.icn-times:before {
+    content: "\f00d"
+}
